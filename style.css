@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lexend Deca', sans-serif; 
+### Primary
+
+- Very dark blue (main background): hsl(233, 47%, 7%)
+- Dark desaturated blue (card background): hsl(244, 38%, 16%)
+- Soft violet (accent): hsl(277, 64%, 61%)
+
+### Neutral
+
+- White (main heading, stats): hsl(0, 0%, 100%)
+- Slightly transparent white (main paragraph): hsla(0, 0%, 100%, 0.75)
+- Slightly transparent white (stat headings): hsla(0, 0%, 100%, 0.6)*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  color: hsl(0, 0%, 100%);
+  /* overflow-x: 0; */
+}
+.background-cover {
+  height: 95vh;
+  width: 100vw;
+  background-color: hsl(233, 47%, 7%);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  width: 75%;
+  min-width: 500px;
+  max-width: 1000px;
+  flex-wrap: wrap-reverse;
+}
+.main {
+  background-color: hsl(244, 38%, 16%);
+  width: 55%;
+  flex-grow: 1;
+  border-radius: 10px 0 0 10px;
+  padding: 4.5rem 6rem 4.5rem 4.5rem;
+  font-family: 'inter', sans-serif;
+}
+h1 {
+  margin-bottom: 1.5rem;
+}
+h1 span {
+  color:hsl(277, 64%, 61%);
+}
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.main-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 5rem;
+}
+.main-two {
+  display: flex;
+  /* justify-content: space-between; */
+}
+.main-two .stats {
+  margin-right: 3.5rem;
+}
+.stats .stats-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.stats .stats-heading {
+  text-transform: uppercase;
+  font-family: 'lexend deca';
+  font-size: .9rem;
+  margin-top: 5px;
+  color: hsla(0, 0%, 100%, 0.6);
+}
+.image {
+  flex-grow: 1;
+  width: 45%;
+  min-height: 400px;
+  min-width: 400px;
+  border-radius: 0 10px 10px 0;
+  background: hsl(277,64%,61%,0.5) url(./images/image-header-desktop.jpg);
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+}
